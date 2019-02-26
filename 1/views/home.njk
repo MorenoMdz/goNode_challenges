@@ -1,0 +1,10 @@
+<h1>Hello, World!</h1>
+<p>Enter your age:</p>
+<form action="/check" method="POST">
+  <input type="number" name="age" >
+  <button type="submit">Save</button>
+  {% if error %}
+    <p style="background: red; color: white; max-width: 200px;">Please insert your age!</p>
+  {% endif %}
+  
+</form>
